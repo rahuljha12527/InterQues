@@ -1,0 +1,93 @@
+<html>
+    <head>
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-157837769-1"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-157837769-1');
+        </script>
+        
+        <title>
+            JavaScript | InterQues | Coding Ninjas
+        </title>
+
+        <link rel="shortcut icon" type="image/png" href="../../assets/favicon.png"/>
+
+        <meta name="description" content="JavScript interview questions">
+    </head>
+    <body>
+
+        <div>
+            <img src="../../assets/CN_logo.png" height='72px' alt="Coding Ninjas Logo">
+        </div>
+
+        <div>
+            <p>
+                <small>
+
+                    <a href="../../index.html">Home</a>
+                    &gt; <a href="../index.html">JavaScript Questions</a>
+                    &gt; What will the code below output to the console and why?
+
+                </small>
+               
+            </p>
+        </div>
+
+
+        <div>
+            <div>
+                <h3>
+                    Q: Consider the two functions below. Will they both return the same thing? Why or why not?
+                </h3>
+                <code>
+                    function foo1()    <br>
+                    &nbsp; { <br>
+                    &nbsp;   return {  <br>
+                    &nbsp;&nbsp; bar: "hello"    <br>
+                    &nbsp;&nbsp; }; <br>
+                    &nbsp;&nbsp; function foo2() <br>
+                    &nbsp;&nbsp; (function() {   <br>
+                    &nbsp;&nbsp;&nbsp; { <br>
+                    &nbsp;&nbsp;&nbsp;  return <br>
+                    &nbsp;&nbsp;  {  <br>
+                    &nbsp;  bar: "hello"   <br>
+                    };  <br>
+                   }   <br>
+                </code>
+            </div>
+            <br>
+            <br>
+            <div>
+                <strong>Answer:</strong> 
+                <p>The above code will output the following to the console:</p>
+                <code>
+                    console.log("foo1 returns:"); <br>
+                    console.log(foo1()); <br>
+                    console.log("foo2 returns:"); <br>
+                    console.log(foo2()); <br>
+                </code>
+                <p>
+                    foo1 returns:  <br> 
+                    Object {bar: "hello"} <code>foo</code>. <br>
+                    foo2 returns: </br> 
+                    undefined<br>               </p>
+            </div>
+        </div>
+
+        <hr>
+
+        <div>
+            <h5>
+                Similar Questions
+            </h5>
+            <ul>
+                
+            </ul>
+        </div>
+        
+    </body>
+</html>
